@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a problem with StayLit (the screen locked anyway, install or uninstall, the tray icon, settings).
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, what actually happened.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Installed StayLit ...
+        2. Left the PC idle for ... minutes
+        3. ...
+    validations:
+      required: false
+  - type: textarea
+    id: env
+    attributes:
+      label: Environment
+      placeholder: StayLit version (About StayLit), Windows version, on battery or plugged in, what the StayLit menu shows about the lock
+    validations:
+      required: false
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: The relevant lines of %LOCALAPPDATA%\StayLit\log.txt (it contains no user or computer name). Remove anything you consider private.
+      render: text
+    validations:
+      required: false
